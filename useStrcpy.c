@@ -7,12 +7,12 @@ int main(void) {
     char str1[16] = "abcdefg";
     char str2[16];
 
-    printf("コピー前のstr2[]の中身：%s\n", str2);
+    printf("The contents of str2[] before copying：%s\n", str2);
 
-    // 文字列をコピーする
-    my_strcpy(str2, str1);  // str1をstr2にコピーする
+    // Copy a string
+    my_strcpy(str2, str1);  // Copy str1 to str2
 
-    printf("コピー後のstr2[]の中身：%s\n", str2);
+    printf("The contents of `str2[]` after copying：%s\n", str2);
     printf("\n");
 
     return 0;

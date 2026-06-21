@@ -7,20 +7,20 @@ extern void my_memcpy(void *dest, const void *src, size_t n);
 
 int main()
 {
-    // 変数定義
+    // Variable Definitions
     char buf1[BUF_SIZE] = "aabb";
     char buf2[BUF_SIZE];
 
-    // 配列の内容を表示
-    printf("配列の要素を表示(コピー前)。\n");
+    // show elements of an array
+    printf("Elements of an array(before copy).\n");
     printf("buf1:%s\n", buf1);
     printf("buf2:%s\n", buf2);
 
-    // メモリをコピーする
-    my_memcpy(buf2, buf1, 3);  // buf1の先頭3バイトをbuf2にコピーする
+    // copy memory
+    my_memcpy(buf2, buf1, 3);  // copy first 3 bytes from buf 1 to buf 2
 
-    // 配列の内容を表示
-    printf("配列の要素を表示(コピー後)。\n");
+    // show elements of an array
+    printf("Elements of an array(after copy).\n");
     printf("buf1:%s\n", buf1);
     printf("buf2:%s\n", buf2);
 
