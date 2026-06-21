@@ -67,11 +67,11 @@ quickSort:
     mov r9, rsi               ; j = low
 
 .partition_loop:
-    cmp r9, r10               ; j < high ?
+    cmp r9, r10               ; j >= high ?
     jge .partition_end
 
     mov eax, [r8 + r9*4]      ; eax = arr[j]
-    cmp eax, r11d             ; arr[j] < pivot ?
+    cmp eax, r11d             ; arr[j] >= pivot ?
     jge .no_partition_swap
 
     inc rcx                   ; i++
