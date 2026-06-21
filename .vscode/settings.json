@@ -1,0 +1,30 @@
+{
+    "editor.fontFamily": "Ac437 IBM BIOS",
+    "terminal.integrated.fontFamily": "Ac437 IBM BIOS",
+    "editor.inlayHints.fontFamily": "Ac437 IBM BIOS",
+    "editor.inlineSuggest.fontFamily": "Ac437 IBM BIOS",
+    "editor.codeLensFontFamily": "Ac437 IBM BIOS",
+    "debug.console.fontFamily": "Ac437 IBM BIOS",
+    "scm.inputFontFamily": "Ac437 IBM BIOS",
+    "vscode_custom_css.imports": ["file:///C:/Users/aliga/vscode-crt.css"],
+    "editor.fontLigatures": false,
+    "workbench.colorTheme": "⚡ Hacker X - Terminal Zero",
+    "editor.tokenColorCustomizations": {
+    "textMateRules": [
+        {
+            "scope": "comment",
+            "settings": {
+                "fontStyle": ""
+            }
+        }
+    ]
+    },
+    "workbench.colorCustomizations": {
+        "editorLineNumber.foreground": "#2b5c2b",
+        "editorLineNumber.activeForeground": "#5eff5e"
+    },
+    "codesnap.backgroundColor": "#021202",
+    "terminal.integrated.cursorStyle": "block",
+    "terminal.integrated.cursorBlinking": true,
+    "editor.cursorStyle": "block",
+}

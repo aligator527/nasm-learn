@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "inputs": [
+    {
+      "id": "asmFiles",
+      "type": "promptString",
+      "description": "ASM files to link",
+      "default": "minic/strcmp.asm"
+    }
+  ],
+    "tasks": [
+        {
+            "label": "Run Assembly",
+            "type": "shell",
+            "command": "nasm -f elf64 ${fileBasename} -o ${fileBasenameNoExtension}.o && ld ${fileBasenameNoExtension}.o -o ${fileBasenameNoExtension} && ./${fileBasenameNoExtension}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run C with selected ASM",
+            "type": "shell",
+            "command": "rm -f .vscode_build_*.o && objs=\"\"; for f in ${input:asmFiles}; do obj=\".vscode_build_$(basename \"${f%.*}\").o\"; nasm -f elf64 \"$f\" -o \"$obj\" || exit 1; objs=\"$objs $obj\"; done; gcc \"${file}\" $objs -o \"${fileBasenameNoExtension}\" && ./\"${fileBasenameNoExtension}\"",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
