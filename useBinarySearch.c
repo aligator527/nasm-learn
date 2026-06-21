@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+extern int binarySearch(int arr[], int n, int x);
+
+int main() {
+    int arr[] = { 2, 3, 4, 10, 40 };
+    int x = 10;
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int result = binarySearch(arr, n, x);
+    if(result == -1) printf("Element is not present in array");
+    else printf("Element is present at index %d",result);
+}
