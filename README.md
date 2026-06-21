@@ -24,7 +24,7 @@ The project contains simple NASM programs that call Linux syscalls directly, plu
   - `bubblesort.asm`
   - `quicksort.asm`
   - `binarysearch.asm`
-- `use*.c` - small C programs that link against selected routines from `minic/`.
+- `use*.c` - small C programs that link against selected routines from `minic/` and `algorithms/`.
 
 This is an educational project, not a production C library. The code favors readability and step-by-step learning over full standard-library compatibility.
 
