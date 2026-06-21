@@ -130,14 +130,28 @@ This repository is a work in progress for assembly practice. Some files are comp
 
 Planned exercises include:
 
-- Sorting algorithms and other algorithms in `algorithms/`
-- Interpreator for LISP and brainfuck
-- Emulation of 8-bit chip
-- Malloc
-- More complete libc-style routines
-- More C test harnesses
-- Cleaner examples for signed numbers, error handling, and edge cases
-- Maybe few graphics exercises (PPM/BMP renderer, ANSI terminal graphics, 2D renderer, sprite engine, raycaster, mini Doom-like engine)
+- More algorithms
+- Dynamic memory allocation (`malloc`)
+- Additional libc-style routines
+- Brainfuck interpreter
+- Lisp interpreter
+- CHIP-8 emulator
+- Graphics experiments
+  - PPM/BMP renderer
+  - ANSI terminal graphics
+  - 2D renderer
+  - Sprite engine
+  - Raycaster
+  - Mini Doom-like engine
+
+## Philosophy
+
+This repository prioritizes:
+
+- readability over clever tricks;
+- learning over optimization;
+- explicit code over macro magic;
+- understanding the ABI and Linux syscalls from first principles.
 
 ## Style of VSCode
 
