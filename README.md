@@ -143,7 +143,7 @@ Planned exercises include:
 
 ![screenshot](./images/screenshot.png)
 
-I use a retro green-on-black VS Code style like in the screenshot because I like the IBM PC 5150 feeling while writing NASM.:D
+I use a retro green-on-black VS Code style like in the screenshot because I like the IBM PC 5150 feeling while writing NASM :D
 
 To get the same look:
 
