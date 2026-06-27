@@ -27,6 +27,7 @@ The project contains simple NASM programs that call Linux syscalls directly, plu
   - `linearsearch.asm`
   - `selectionsort.asm`
   - `insertionsort.asm`
+  - `mergesort.asm`
 - `use*.c` - small C programs that link against selected routines from `minic/` and `algorithms/`.
 
 This is an educational project, not a production C library. The code favors readability and step-by-step learning over full standard-library compatibility.
